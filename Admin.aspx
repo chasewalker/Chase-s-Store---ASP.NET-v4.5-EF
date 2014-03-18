@@ -43,7 +43,7 @@
                         <% if (item is ClearanceItem)
                            {
                                var clearanceItem = item as ClearanceItem; %>
-                              <span class="label label-danger">Clearance Item!</span> <span class="label label-success"><%=clearanceItem.ItemsLeft %> left</span>
+                              <br/><span class="label label-danger">Clearance Item!</span> <span class="label label-success"><%=clearanceItem.ItemsLeft %> left</span>
                            <% } %>
                     </td>
                     <td><%=item.Description %></td>
@@ -53,7 +53,7 @@
                         <% if (item is ClearanceItem)
                            {
                                var clearanceItem = item as ClearanceItem; %>
-                              <span class="label label-danger">Clearance Price: <%=clearanceItem.ClearancePrice %></span>
+                            <br/><span class="label label-danger">Clearance Price: <%=clearanceItem.ClearancePrice %></span>
                            <% } %>
                     </td>
                     <td><%=item.SalePrice %></td>
